@@ -25,10 +25,6 @@ public class GameWorld : MonoBehaviour {
     void Start () {
         ChooseBackground(1, 0);
         ChooseBackground(2, 1);
-	}	
-
-	void Update () {
-		
 	}
 
     public void ChooseBackground(int screenID, int id = -1)

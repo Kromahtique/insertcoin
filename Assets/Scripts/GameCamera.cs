@@ -12,10 +12,10 @@ public class GameCamera : MonoBehaviour {
 
     private bool hasPassedCheckPoint = false;
     
-	void Start () {
+    void Start () {
         checkPoint = checkPointObject.GetComponent<CheckPoint>();
         otherCamera = otherCameraObject.GetComponent<GameCamera>();
-	}
+    }
 
     public void HasTouchedCheckPoint()
     {

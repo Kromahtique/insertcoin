@@ -8,15 +8,15 @@ public class MainCamera : MonoBehaviour {
     private float yInitPos;
 
     public GameManager gameManager;
-    
-	void Start () {
+
+    void Start () {
         yInitPos = transform.position.y;
-	}
-	
-	void Update () {
+    }
+
+    void Update () {
         if (gameManager.hasStarted)
         {
             transform.Translate(Vector3.left * paningSpeed * Time.deltaTime * Input.GetAxis("Horizontal"), Space.World);
         }
-	}
+    }
 }

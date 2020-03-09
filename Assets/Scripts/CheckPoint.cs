@@ -9,10 +9,9 @@ public class CheckPoint : MonoBehaviour {
     public bool hasBeenTouched = false;
     public GameWorld gameWorld;
 
-	// Use this for initialization
-	void Start () {
-		gameCamera = camera.GetComponent<GameCamera>();
-	}
+    void Start () {
+        gameCamera = camera.GetComponent<GameCamera>();
+    }
 
     void OnTriggerEnter(Collider col)
     {

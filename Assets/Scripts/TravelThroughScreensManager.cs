@@ -22,7 +22,7 @@ public class TravelThroughScreensManager : MonoBehaviour {
     GameObject[] machines;
 
 	// Use this for initialization
-	void Start () {
+    void Start () {
         currentMachine = GameObject.Find("machine1");
         nextMachine = GameObject.Find("machine2");
 
@@ -37,11 +37,6 @@ public class TravelThroughScreensManager : MonoBehaviour {
         camera1.transform.position = temp;
         switchToNextMachine();
     }
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 
     void switchToNextMachine()
     {
