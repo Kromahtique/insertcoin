@@ -12,16 +12,13 @@ public class Character : MonoBehaviour {
 
     public bool isDead = false;
 
-	// Use this for initialization
-	void Start () {
+    void Start () {
         rigid = transform.GetComponent<Rigidbody>();
         gameMan = gameManager.GetComponent<GameManager>();
     }
 	
-	// Update is called once per frame
-	void Update () {
-        if (!isDead && gameMan.hasStarted)
-        {
+    void Update () {
+        if (!isDead && gameMan.hasStarted) {
             transform.Translate(Vector3.left * Time.deltaTime * flySpeed);
 
             bool isJumping = Input.GetButton("Jump");
@@ -30,7 +27,7 @@ public class Character : MonoBehaviour {
                 rigid.AddForce(Vector3.up * jumpForce);
             }
         }
-	}
+    }
 
     void OnTriggerEnter(Collider col)
     {
