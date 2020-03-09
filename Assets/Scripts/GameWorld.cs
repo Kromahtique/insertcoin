@@ -11,13 +11,6 @@ public class GameWorld : MonoBehaviour {
     public Transform obstacle;
     public GameObject[] obstacles;
 
-    public Sprite background1;
-    public Sprite background2;
-    public Sprite background3;
-    public Sprite background4;
-    public Sprite background5;
-    public Sprite background6;
-
     public List<Sprite> backgrounds;
 
     int chanceToGetObstacle = 8;
